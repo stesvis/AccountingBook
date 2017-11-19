@@ -4,8 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/R:/Github/AccountingBook/app/Http/Controllers/CustomersController.php</file>
-            <file>file:/R:/Github/AccountingBook/database/migrations/2017_10_30_000910_create_customers_table.php</file>
-            <file>file:/R:/Github/AccountingBook/routes/web.php</file>
+            <file>file:/R:/Github/AccountingBook/resources/views/shared/pvSidebar.blade.php</file>
+            <file>file:/R:/Github/AccountingBook/resources/views/shared/pvNavbar.blade.php</file>
         </group>
     </open-files>
 </project-private>
