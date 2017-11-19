@@ -1,0 +1,80 @@
+﻿html,
+body,
+body.fixed .wrapper {
+    background: #2f323b !important;
+    background-color: #2f323b !important;
+    color: #c0c4c8 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.skin-black .navbar,
+.right-side,
+.content,
+.bg-black {
+    background-color: unset;
+    background: unset;
+}
+
+.skin-black .navbar .nav a,
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small,
+.skin-black .sidebar a,
+.right-side > .content-header > .breadcrumb > li > a {
+    color: #c0c4c8;
+}
+
+.skin-black .left-side,
+.skin-black .sidebar > .sidebar-menu > li > a:hover,
+.skin-black .sidebar > .sidebar-menu > li.active > a,
+.skin-black .sidebar > .sidebar-menu > li > .treeview-menu,
+.nav > li a:hover {
+    background: #292a31;
+}
+
+.skin-black .sidebar a {
+    color: #c0c4c8;
+}
+
+.skin-black .navbar .sidebar-toggle .icon-bar {
+    background: #ebebeb;
+}
+
+.skin-black .navbar .sidebar-toggle:hover .icon-bar {
+    background: #f6a821 !important;
+}
+
+
+.skin-black .logo,
+.skin-black .navbar .nav > li > a:hover, .skin-black .navbar .nav > li > a:active, .skin-black .navbar .nav > li > a:focus, .skin-black .navbar .nav .open > a, .skin-black .navbar .nav .open > a:hover, .skin-black .navbar .nav .open > a:focus,
+.navbar-nav > .notifications-menu > .dropdown-menu, .navbar-nav > .user-menu > .dropdown-menu, .navbar-nav > .tasks-menu > .dropdown-menu, .navbar-nav > .messages-menu > .dropdown-menu,
+.navbar-nav > .user-menu > .dropdown-menu > li.user-footer,
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+    color: #ffffff;
+    background: #f6a821;
+}
+
+    .skin-black .logo:hover {
+        color: #ffffff;
+        background: #c37e08;
+    }
+
+
+.skin-black .user-panel > .info,
+.skin-black .user-panel > .info > a,
+.skin-black .sidebar > .sidebar-menu > li > a:hover {
+    color: #ebebeb;
+}
+
+.skin-black .sidebar > .sidebar-menu > li.active {
+    border-left: 6px solid #c37e08;
+}
+
+    .skin-black .sidebar > .sidebar-menu > li.active > a {
+        color: #f6a821;
+    }
+
+.skin-black .navbar {
+    border-bottom: 2px solid #f6a821;
+}

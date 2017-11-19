@@ -31,6 +31,11 @@
                 </a>
             </li>
             <li>
+                <a href="customers">
+                    <i class="fa fa-address-card-o"></i> <span>Customers</span>
+                </a>
+            </li>
+            <li>
                 <a href="pages/widgets.html">
                     <i class="fa fa-th"></i> <span>Widgets</span> <small class="badge pull-right bg-green">new</small>
                 </a>
