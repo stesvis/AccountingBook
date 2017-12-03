@@ -37,9 +37,9 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/charts/morris.html" style="margin-left: 10px;"><i
+                    <li><a href="{{ action('CustomersController@index') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> All Customers</a></li>
-                    <li><a href="pages/charts/flot.html" style="margin-left: 10px;"><i
+                    <li><a href="{{ action('CustomersController@create') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> Add New</a></li>
                 </ul>
             </li>
@@ -50,9 +50,9 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/charts/morris.html" style="margin-left: 10px;"><i
+                    <li><a href="{{ action('VendorsController@index') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> All Vendors</a></li>
-                    <li><a href="pages/charts/flot.html" style="margin-left: 10px;"><i
+                    <li><a href="{{ action('VendorsController@create') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> Add New</a></li>
                 </ul>
             </li>

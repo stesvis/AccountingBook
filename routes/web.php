@@ -11,11 +11,19 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/customers', 'CustomersController@index');
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+//======================== Customers ========================//
+Route::get('/customers', 'CustomersController@index');
+Route::get('/customers/create', 'CustomersController@create');
+
+//======================== Vendors ========================//
+Route::get('/vendors', 'VendorsController@index');
+Route::get('/vendors/create', 'VendorsController@create');
+

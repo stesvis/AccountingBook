@@ -26,4 +26,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * A user can belong to different clients
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function clients()
+    {
+        return $this->hasMany('App\Client');
+    }
 }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Customer;
+use App\Vendor;
 use Illuminate\Http\Request;
 
-class CustomersController extends Controller
+class VendorsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,17 +15,7 @@ class CustomersController extends Controller
     public function index()
     {
         //
-        $customers = Customer::all();
-
-//        return view('customers.index');
-
-//        return json_encode($customers, JSON_PRETTY_PRINT);
-
-//        return view('customers.index', [
-//            'customers' => $customers,
-//        ]);
-
-        return view('customers.index')->with('customers', $customers);
+        return view('vendors.index');
     }
 
     /**
@@ -36,7 +26,7 @@ class CustomersController extends Controller
     public function create()
     {
         //
-        return view('customers.index');
+        return view('vendors.create');
     }
 
     /**
@@ -53,10 +43,10 @@ class CustomersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Customer $customer
+     * @param  \App\Vendor $vendor
      * @return \Illuminate\Http\Response
      */
-    public function show(Customer $customer)
+    public function show(Vendor $vendor)
     {
         //
     }
@@ -64,10 +54,10 @@ class CustomersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Customer $customer
+     * @param  \App\Vendor $vendor
      * @return \Illuminate\Http\Response
      */
-    public function edit(Customer $customer)
+    public function edit(Vendor $vendor)
     {
         //
     }
@@ -76,10 +66,10 @@ class CustomersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  \App\Customer $customer
+     * @param  \App\Vendor $vendor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Customer $customer)
+    public function update(Request $request, Vendor $vendor)
     {
         //
     }
@@ -87,10 +77,10 @@ class CustomersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Customer $customer
+     * @param  \App\Vendor $vendor
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Customer $customer)
+    public function destroy(Vendor $vendor)
     {
         //
     }
