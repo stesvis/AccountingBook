@@ -25,34 +25,39 @@
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
-            <li class="active">
-                <a href="index.html">
+            <li class="{{ Request::is('home') ? 'active' : '' }}">
+                <a href="{{ action('HomeController@index') }}">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
-            <li class="treeview">
+            <li class="treeview {{ strpos(Route::currentRouteAction(), 'CustomersController') !== false ? 'active' : '' }}">
                 <a href="#">
                     <i class="fa fa-address-card"></i>
                     <span>Customers</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ action('CustomersController@index') }}" style="margin-left: 10px;"><i
+                    <li class="{{ strpos(Route::currentRouteAction(), 'CustomersController@index') !== false ? 'active' : '' }}">
+                        <a
+                                href="{{ action('CustomersController@index') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> All Customers</a></li>
-                    <li><a href="{{ action('CustomersController@create') }}" style="margin-left: 10px;"><i
+                    <li class="{{ strpos(Route::currentRouteAction(), 'CustomersController@create') !== false ? 'active' : '' }}">
+                        <a href="{{ action('CustomersController@create') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> Add New</a></li>
                 </ul>
             </li>
-            <li class="treeview">
+            <li class="treeview {{ strpos(Route::currentRouteAction(), 'VendorsController') !== false ? 'active' : '' }}">
                 <a href="#">
                     <i class="fa fa-address-book"></i>
                     <span>Vendors</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ action('VendorsController@index') }}" style="margin-left: 10px;"><i
+                    <li class="{{ strpos(Route::currentRouteAction(), 'VendorsController@index') !== false ? 'active' : '' }}">
+                        <a href="{{ action('VendorsController@index') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> All Vendors</a></li>
-                    <li><a href="{{ action('VendorsController@create') }}" style="margin-left: 10px;"><i
+                    <li class="{{ strpos(Route::currentRouteAction(), 'VendorsController@create') !== false ? 'active' : '' }}">
+                        <a href="{{ action('VendorsController@create') }}" style="margin-left: 10px;"><i
                                     class="fa fa-angle-double-right"></i> Add New</a></li>
                 </ul>
             </li>

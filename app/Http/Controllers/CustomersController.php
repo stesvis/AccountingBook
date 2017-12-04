@@ -36,7 +36,7 @@ class CustomersController extends Controller
     public function create()
     {
         //
-        return view('customers.index');
+        return view('customers.create');
     }
 
     /**
